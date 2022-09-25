@@ -1,0 +1,113 @@
+.header {
+  background-color: var(--darkblue);
+  box-sizing: border-box;
+  height: 400px;
+  padding-top: 100px;
+}
+.header_inner {
+  align-items: flex-start;
+  display: flex;
+}
+.header_image_container {
+  background-image: url("../assets/header/Rectangle 3674.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 518px;
+  margin-right: 80px;
+  overflow: hidden;
+  width: 414px;
+}
+.button {
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 10px;
+  color: var(--darkblue);
+  font-size: 18px;
+  font-weight: 600;
+  height: 65px;
+  margin-top: 20px;
+  width: 414px;
+}
+.button:hover {
+  background-color: var(--darkblue);
+  color: var(--white);
+}
+.social_icons {
+  align-items: center;
+  display: flex;
+  margin-top: 84px;
+}
+.social_icons img {
+  height: 22px;
+  margin-right: 22px;
+  opacity: 0.5;
+  width: 22px;
+}
+
+@media screen and (max-width: 1279px) {
+  .header_image_container {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    display: flex;
+    align-items: center;
+    height: 55vw;
+    padding: 0;
+  }
+  .header_image_container {
+    margin-right: 20px;
+    width: 32vw;
+    height: 35vw;
+  }
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
+    height: 35vw;
+  }
+  .social_icons {
+    margin-top: 0;
+  }
+  .button {
+    width: calc(100%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    font-size: 16px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: 170vw;
+  }
+  .header_inner {
+    align-items: center;
+    flex-direction: column;
+  }
+  .header_image_container {
+    height: 90vw;
+    margin: 0;
+    width: calc(90%);
+  }
+  .header_content {
+    align-items: center;
+    margin-top: 20px;
+    width: calc(100%);
+  }
+  .header_content div {
+    text-align: center;
+  }
+  .social_icons img {
+    height: 20px;
+    width: 20px;
+  }
+}

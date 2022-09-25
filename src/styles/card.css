@@ -1,0 +1,51 @@
+.card {
+  box-sizing: border-box;
+  margin: 40px 0 30px;
+  padding: 10px;
+  transition: all 0.5s;
+  width: calc(100% / 3 - 5px);
+}
+.card img {
+  width: calc(100%);
+}
+.card_content {
+  color: var(--darkblue);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 15px;
+  opacity: 0.6;
+}
+
+.card_desc {
+  color: var(--yellow);
+  margin-top: 40px;
+  transition: color 0.8s;
+}
+
+.card_desc span {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.card:hover {
+  background-color: rgb(224, 175, 47, 0.9);
+  border-radius: 10px;
+}
+
+.card:hover .card_desc {
+  color: var(--white);
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    width: calc(100% / 2 - 5px);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card {
+    margin: 15px 0;
+    width: calc(100%);
+  }
+}
